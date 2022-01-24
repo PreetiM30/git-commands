@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularApp';
+
+  users = [];
+  pushUser(data) {
+    this.users.push(data);
+  }
+
+  onRemoveItem(item) {
+    this.users.splice(item, 1);
+  }
 }
