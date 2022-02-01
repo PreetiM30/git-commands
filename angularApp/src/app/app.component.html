@@ -5,7 +5,10 @@
 
     <ul>
       <li *ngFor="let user of users; index as i">
-        <p>{{user}} <span (click)="onRemoveItem(i)">Remove</span></p>
+        <p>{{user}} 
+          <span (click)="onRemoveItem(i)">Remove</span>
+          <!-- <span><input class="visibilty" type="text">Edit</span> -->
+        </p>
       </li>
     </ul>
   </div>
